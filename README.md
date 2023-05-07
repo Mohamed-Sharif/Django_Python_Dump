@@ -1,1 +1,0 @@
-# Simple_Django_project
