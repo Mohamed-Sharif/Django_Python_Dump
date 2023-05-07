@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Department: {{ object.name }}</h1>
+  <p><a href="{% url 'departments:department_list' %}">Back to departments</a></p>
+  <table>
+    <tbody>
+      <tr>
+        <th>ID:</th>
+        <td>{{ object.id }}</td>
+      </tr>
+      <tr>
+        <th>Name:</th>
+        <td>{{ object.name }}</td>
+      </tr>
+    </tbody>
+  </table>
+{% endblock %}

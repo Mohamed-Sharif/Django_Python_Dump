@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{{ employee }}</h1>
+    {% if employee.photo %}
+        <img src="{{ employee.photo.url }}" alt="{{ employee }}">
+    {% else %}
+        <p>No photo available</p>
+    {% endif %}
+    <p>{{ employee.first_name }}</p>
+    <p>{{ employee.department }}</p>
+
+    <p>{{ employee.bio }}</p>
+{% endblock %}
