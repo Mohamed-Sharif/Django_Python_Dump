@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{{ employee }}</h1>
+    <img src="{{ employee.photo.url }}" alt="{{ employee }}">
+    <p>{{ employee.bio }}</p>
+{% endblock %}
